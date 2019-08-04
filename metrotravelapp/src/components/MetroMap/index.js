@@ -37,9 +37,11 @@ const MetroMap = () => {
   const handleKeyDown = (e) => {
     if (e.key === 'Enter') {
       const info = utils.findMetroInfoByName(station);
-      setMetro(info);
-      toggleModal();
 
+      if (info !== undefined) {
+        setMetro(info);
+        toggleModal();
+      }
       setStation('');
     }
   }
