@@ -5,6 +5,7 @@
   display:  flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .metromap img {
@@ -12,4 +13,8 @@
   max-height: 90%;
   padding: 20px;
   height: auto;
+}
+
+.container {
+  margin: 20px;
 }
